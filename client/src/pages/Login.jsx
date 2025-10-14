@@ -8,10 +8,36 @@ import Button from 'react-bootstrap/Button';
 import Container from "react-bootstrap/Container"
 import Alert from 'react-bootstrap/Alert';
 
+
+
 // importação do icone de login
 import { FaPlaystation } from "react-icons/fa";
 
+//importando o hook para verificar o login, vindo do useUsuarios
+import { useVerificaLogin} from "../hooks/useUsuarios"
+
+// Importando a função useform do pacote hook-form
+import { useForm} from "react-hook-form"
+
 const Login = () => {
+
+  // register = cria um objeto com os valores retirados dos inputs
+  // handleSubmit = envia os dados formulário, caso dê erro ou sucesso 
+  // formState { erros } = objeto que guarda uma lista de erros que aconteceram na tentativa do envio 
+
+  const {register,  handleSubmit, formState: { errors}} = useForm()
+
+  // Caso o envio de certo 
+  const onSubmit = (data) => {
+    console.log("Dados enviados: ",data);
+
+  };
+  //Caso o envio dê errado
+  const onError = (ee) => {
+    console.log("Erros: ",errors);
+
+  };
+
   return (
     <div>
       <Container className="justify-content-center align-content-center min-vh-100" >

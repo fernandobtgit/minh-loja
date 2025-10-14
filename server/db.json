@@ -1,0 +1,80 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Fernando",
+            "email": "fernandobt481@gmail.com",
+            "senha": "5",
+            "tipo": "Adm",
+            "imagemaUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNNW4Fto-ITqRzcS04bPd_Ejanb7kOXjglww&s"
+
+
+        },
+        {
+            "id": 2,
+            "nome": "Robson",
+            "email": "Robsonbt481@gmail.com",
+            "senha": "5",
+            "tipo": "Gerente",
+            "imagemaUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ffU9GvqyDrOoXmcgjwX5kJJ38HQAYYPDyA&s"
+
+
+        },
+        {
+            "id": 3,
+            "nome": "Mc poze",
+            "email": "poze@gmail.com",
+            "senha": "5",
+            "tipo": null,
+            "imagemaUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIr8-FLMWHd13VsLSREx60OV1VqP3cC4u0DQ&s"
+
+
+        }
+
+    ],
+    "produtos": [
+        {
+            "id": 1,
+            "SKU": "1234567890",
+            "nome": "Shampoo CR7",
+            "descrição": "Anticaspa, shampoo dos vencedores",
+            "categoria": "Saúde e Beleza",
+            "marca": "Clear men",
+            "medida": "mL",
+            "tamanho": 400,
+            "custo": 0,
+            "venda": 0,
+            "quantidade": 7,
+            "fornecedor": "Ambev",
+            "imagemaUrl": "https://seumadruga72.wordpress.com/wp-content/uploads/2011/06/clear-man.jpg"
+        }
+
+    ],
+    "categorias":[
+        {
+            "id": 1,
+            "nome": "Saúde e Beleza"
+        }
+
+    ],
+    "clientes":[
+        {
+            "id": 1,
+            "nome": "Maria das Graças",
+            "email": "maria@gmail.com",
+            "documento": "12312312332",
+            "tipo": "PF",
+            "telefone": "41992675441",
+            "daraNascimento": "2006-05-01",
+            "endereço": {
+                "cep": "23456789",
+                "logradouro": "Rua dos bobos",
+                "complemento": "número 1",
+                "bairro": "Terra do nunca",
+                "cidade": "Ilha da magia",
+                "uf" :"SP"
+            },
+            "stataus": "Ativo"
+        }
+    ]
+}
