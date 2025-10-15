@@ -11,12 +11,12 @@ export function useVerificaLogin() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const req = await fetch('${url}/usuarios');
+        const req = await fetch(`${url}/usuarios`);
         const res = await req.json();
 
         setUsuarios(res);
-      } catch (erro) {
-        console.log(erro.message);
+      } catch (error) {
+        console.log(error.message);
       }
     }
     fetchData();
