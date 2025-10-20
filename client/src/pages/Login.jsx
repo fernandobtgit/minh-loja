@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 // import dos componentes dos apps
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Row from "react-bootstrap/Row";
@@ -21,7 +21,22 @@ import { useNavigate } from "react-router-dom";
 // Importando a função useform do pacote hook-form
 import { useForm } from "react-hook-form";
 
+// Importar as informações do contexto autenticação de usuário
+import { AuthContext } from "../contexts/UserContext";
+
+
+
 const Login = () => {
+  // Usa as variáveis de contexto do usuário 
+  const { logout } = useContext(AuthContext)
+
+
+  //Assim que entrar na página, o localStorage é resetado
+  useEffect(() => {
+    logout()
+
+
+  }, [])
   // register = cria um objeto com os valores retirados dos inputs
   // handleSubmit = envia os dados formulário, caso dê erro ou sucesso
   // formState { erros } = objeto que guarda uma lista de erros que aconteceram na tentativa do envio
